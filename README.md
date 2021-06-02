@@ -62,6 +62,16 @@ This section lists the minimum functionality of the Sender and Receiver.
 - can either generate random values for the parameters, or read from a file
 - uses console output to communicate the parameters.
 
+Classes | Responsibility
+--- | --- 
+*StartApp* | Starts application by loading all the configuration needed for sender to publish data.
+*FetchProperties* | Creates property pojo object based on the parameter passed.
+*JsonConverter* | Converts object to json string and json string to respective object.
+*ClassHandler* | Utility class helps obtaining classes and object instance.
+*Publisher* | Publish data obtained from provider onto console.
+*Logger* | Prints json string data to console.
+*BmsData* | Pojo object for bms data.
+
 ### The Receiver
 
 - reads the parameters from the console input
