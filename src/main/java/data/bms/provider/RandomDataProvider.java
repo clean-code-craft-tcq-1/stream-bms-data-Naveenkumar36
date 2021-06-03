@@ -13,11 +13,11 @@ import data.bms.model.BmsData;
 public class RandomDataProvider implements DataProvider {
 
     public static final int MIN_TEMP = 0;
-    public static final int MAX_TEMP = 45;
-    public static final int MIN_SOC = 20;
-    public static final int MAX_SOC = 80;
+    public static final int MAX_TEMP = 50;
+    public static final int MIN_SOC = 10;
+    public static final int MAX_SOC = 90;
     public static final float MIN_CHARGING_RATE = 0f;
-    public static final float MAX_CHARGING_RATE = 0.8f;
+    public static final float MAX_CHARGING_RATE = 1f;
     private final Random random = new Random();
 
     @Override
