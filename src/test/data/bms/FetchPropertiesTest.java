@@ -20,6 +20,7 @@ class FetchPropertiesTest {
         assertTrue(fetchProperties.getDelayInMilliSec() > 0);
         assertTrue(fetchProperties.getSamples() > 0);
         assertNotNull(fetchProperties.getDataProvider());
+        assertNotNull(fetchProperties.getFileName());
     }
 
     @Test

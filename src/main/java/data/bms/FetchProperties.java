@@ -12,9 +12,11 @@ public class FetchProperties {
     private static final String DELAY = "DELAY";
     private static final String PROVIDER = "PROVIDER";
     private static final String NO_OF_SAMPLE = "NO_OF_SAMPLE";
+    private static final String FILE_NAME = "FILE_NAME";
     private final int delayInMilliSec;
     private final String dataProvider;
     private final int samples;
+    private final String fileName;
 
     /**
      * Simple constructor.
@@ -27,6 +29,7 @@ public class FetchProperties {
         this.delayInMilliSec = Integer.parseInt(properties.getProperty(DELAY));
         this.dataProvider = properties.getProperty(PROVIDER);
         this.samples = Integer.parseInt(properties.getProperty(NO_OF_SAMPLE));
+        this.fileName = properties.getProperty(FILE_NAME);
     }
 
     private Properties loadProperties(String propertyName) throws IOException {
@@ -51,5 +54,9 @@ public class FetchProperties {
 
     public int getSamples() {
         return samples;
+    }
+
+    public String getFileName() {
+        return fileName;
     }
 }
