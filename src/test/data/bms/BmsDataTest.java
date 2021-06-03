@@ -1,4 +1,4 @@
-package data.bms.sender;
+package data.bms;
 
 import org.junit.jupiter.api.Test;
 
@@ -18,7 +18,6 @@ class BmsDataTest {
     void testHashcodeAndToStringNotNull() {
         assertEquals(bmsData.hashCode(), bmsData1.hashCode());
         assertEquals(bmsData.toString(), bmsData1.toString());
-
     }
 
     @Test

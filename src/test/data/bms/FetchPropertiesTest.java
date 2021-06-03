@@ -1,10 +1,8 @@
-package data.bms.sender;
+package data.bms;
 
 import java.io.IOException;
 
 import org.junit.jupiter.api.Test;
-
-import data.bms.FetchProperties;
 
 import static org.junit.jupiter.api.Assertions.*;
 

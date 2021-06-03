@@ -1,4 +1,4 @@
-package data.bms.sender;
+package data.bms;
 
 import java.io.IOException;
 

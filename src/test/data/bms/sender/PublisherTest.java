@@ -71,7 +71,6 @@ class PublisherTest {
         publisher = new Publisher(logger, dataProvider, jsonConverter, fetchProperties);
         InOrder loggerInOrder = inOrder(logger);
         int noOfSamples = 60;
-        int delayInMilli = 300;
         when(fetchProperties.getSamples()).thenReturn(noOfSamples);
         when(dataProvider.provide(noOfSamples)).thenReturn(getBmsData());
         when(jsonConverter.writeData(getBmsData().get(0))).thenThrow(JsonProcessingException.class);

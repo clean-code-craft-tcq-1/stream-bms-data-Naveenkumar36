@@ -7,9 +7,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
  */
 public class BmsData {
 
-    private final int temperature;
-    private final int soc;
-    private final int chargingRate;
+    private final float temperature;
+    private final float soc;
+    private final float chargingRate;
 
     /**
      * Create BmsData model class
@@ -19,9 +19,9 @@ public class BmsData {
      * @param chargingRate int
      */
     public BmsData(
-          @JsonProperty(value = "temperature", required = true) int temperature,
-          @JsonProperty(value = "soc", required = true) int soc,
-          @JsonProperty(value = "chargingRate", required = true) int chargingRate
+          @JsonProperty(value = "temperature", required = true) float temperature,
+          @JsonProperty(value = "soc", required = true) float soc,
+          @JsonProperty(value = "chargingRate", required = true) float chargingRate
     )
     {
         this.temperature = temperature;
@@ -29,15 +29,15 @@ public class BmsData {
         this.chargingRate = chargingRate;
     }
 
-    public int getTemperature() {
+    public float getTemperature() {
         return temperature;
     }
 
-    public int getSoc() {
+    public float getSoc() {
         return soc;
     }
 
-    public int getChargingRate() {
+    public float getChargingRate() {
         return chargingRate;
     }
 
